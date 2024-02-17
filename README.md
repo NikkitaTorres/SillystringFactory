@@ -14,16 +14,24 @@ The Factory web application is designed to make it easier for the user to create
 * Razor Pages
 * ASP.NET Core
 * Entity Framework Core
+* dotnet-ef
 
 ## Setup/Installation Requirements
 
 1. Clone [this](https://github.com/NikkitaTorres/SalonProject.git) repository to your desktop.
-2. Import the nikkita_torres.sql file into MySQL Workbench to re-create the database. You can do this by:
+2. You can either import the nikkita_torres.sql file into MySQL Workbench to re-create the database or use migrations to re-create the database. You can import the file by:
 
 - Selecting "Data Import/Export" in the Navigator/Administration"
 - Select "Import from Self-Contained File" and select the "nikkita_torres" file inside of the HairSalon.Solution folder.
 - You can rename this file by clicking "New..." next to the "Default Schema to be Imported To", but make sure to adjust the "database=" accordingly on step 4.
 - Finally, click the "Start Import" button located in the bottom right.
+
+To create the database using migrations:
+- First install dotnet-ef if you haven't already done so. This can be accomplished by running "dotnet tool install --global dotnet-ef --version 6.0.0" in the terminal. If you've already done this, move onto the next step.
+- Then, in the production directory (Factory) of the project, run "dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0" in the terminal to 
+- Run "dotnet ef migrations add Initial" in the terminal. "Initial" can be renamed to something else here, but it is common to leave it as "Initial" or something with a similair meaning for the first migration.
+- Finally, run "dotnet ef database update" in terminal to update/create the database.
+
 After you are finished with the above steps, reopen the "Navigator > Schemas tab". Right click and select "Refresh All". The new database will appear.
 3. This project requires a file named "appsettings.json". Create this file at the top level directory of the project (HairSalon.Solution) by typing "touch appsettings.json" into your terminal.
 4. After creating the file, add the following code to the file: "{
