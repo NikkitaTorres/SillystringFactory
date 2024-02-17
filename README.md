@@ -19,7 +19,7 @@ The Factory web application is designed to make it easier for the user to create
 ## Setup/Installation Requirements
 
 1. Clone [this](https://github.com/NikkitaTorres/SillystringFactory.git) repository to your desktop.
-2. You can either import the nikkita_torres.sql file into MySQL Workbench to re-create the database or use migrations to re-create the database. You can import the file by:
+2. You can either import the nikkita_torres.sql file into MySQL Workbench to re-create the database or use migrations to re-create and update the database. You can import the file by:
 
 - Selecting "Data Import/Export" in the Navigator/Administration"
 - Select "Import from Self-Contained File" and select the "nikkita_torres" file inside of the Factory.Solution folder.
@@ -59,3 +59,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+//bugsquashing
