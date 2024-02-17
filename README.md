@@ -32,7 +32,7 @@ To create the database using migrations:
 - Run "dotnet ef migrations add Initial" in the terminal. "Initial" can be renamed to something else here, but it is common to leave it as "Initial" or something with a similair meaning for the first migration.
 - Finally, run "dotnet ef database update" in terminal to update/create the database.
 
-After you are finished with the above steps, reopen the "Navigator > Schemas tab". Right click and select "Refresh All". The new database will appear.
+After you are finished with the above steps, in MySQL Workbench, open the "Navigator > Schemas tab". Right click and select "Refresh All". The new database will appear.
 3. This project requires a file named "appsettings.json". Create this file at the top level directory of the project (Factory.Solution) by typing "touch appsettings.json" into your terminal.
 4. After creating the file, add the following code to the file: "{
   "ConnectionStrings": {
@@ -46,7 +46,7 @@ The database="" apostrophes should be changed to whatever you named the sql file
 
 ## Know bugs
 
-No known bugs at this time.
+Clicking on a machine from homepage list results in dead link.
 
 ## License
 
