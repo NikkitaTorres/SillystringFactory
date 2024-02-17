@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.License
+
+<h4>Add a new license</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Title)
+  @Html.TextBoxFor(model => model.Title)
+
+  <input type="submit" value="Add new license" class="btn btn-primary" />
+}
+
+<p>@Html.ActionLink("Show all licenses", "Index")</p>
