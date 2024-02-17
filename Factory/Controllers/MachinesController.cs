@@ -39,7 +39,7 @@ namespace Factory.Controllers
       Machine thisMachine = _db.Machines
                                   .Include(machine => machine.Engineers)
                                   .ThenInclude(engineer => engineer.JoinEntities)
-                                  .ThenInclude(join => join.Tag)
+                                  .ThenInclude(join => join.License)
                                   .FirstOrDefault(machine => machine.MachineId == id);
       return View(thisMachine);
     }
