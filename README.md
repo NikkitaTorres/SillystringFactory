@@ -18,11 +18,11 @@ The Factory web application is designed to make it easier for the user to create
 
 ## Setup/Installation Requirements
 
-1. Clone [this](https://github.com/NikkitaTorres/SalonProject.git) repository to your desktop.
+1. Clone [this](https://github.com/NikkitaTorres/SillystringFactory.git) repository to your desktop.
 2. You can either import the nikkita_torres.sql file into MySQL Workbench to re-create the database or use migrations to re-create the database. You can import the file by:
 
 - Selecting "Data Import/Export" in the Navigator/Administration"
-- Select "Import from Self-Contained File" and select the "nikkita_torres" file inside of the HairSalon.Solution folder.
+- Select "Import from Self-Contained File" and select the "nikkita_torres" file inside of the Factory.Solution folder.
 - You can rename this file by clicking "New..." next to the "Default Schema to be Imported To", but make sure to adjust the "database=" accordingly on step 4.
 - Finally, click the "Start Import" button located in the bottom right.
 
@@ -33,16 +33,16 @@ To create the database using migrations:
 - Finally, run "dotnet ef database update" in terminal to update/create the database.
 
 After you are finished with the above steps, reopen the "Navigator > Schemas tab". Right click and select "Refresh All". The new database will appear.
-3. This project requires a file named "appsettings.json". Create this file at the top level directory of the project (HairSalon.Solution) by typing "touch appsettings.json" into your terminal.
+3. This project requires a file named "appsettings.json". Create this file at the top level directory of the project (Factory.Solution) by typing "touch appsettings.json" into your terminal.
 4. After creating the file, add the following code to the file: "{
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Port=3306;database="";uid=YOUR_USERNAME_HERE;pwd=YOUR_PASSWORD_HERE;"
   }
 }".
 The database="" apostrophes should be changed to whatever you named the sql file that was imported (default: nikkita_torres). Make sure to replace the "YOUR_USERNAME_HERE" and "YOUR_PASSWORD_HERE" with your own username and password for MySQL Workbench, no apostrophes needed.
-5. Navigate to the HairSalon directory and run "dotnet build" in the terminal to compile the code.
-6. Use "dotnet restore" in the HairSalon directory to install necessary packages.
-7. Use "dotnet watch run" in the HairSalon directory to launch the project.
+5. Navigate to the Factory directory and run "dotnet build" in the terminal to compile the code.
+6. Use "dotnet restore" in the Factory directory to install necessary packages.
+7. Use "dotnet watch run" in the Factory directory to launch the project.
 
 ## Know bugs
 
