@@ -11,9 +11,9 @@
   <h3>No licenses have been added yet!</h3>
 }
 
-@foreach (Engineer engineer in Model)
+@foreach (License license in Model)
 {
-  <li>@Html.ActionLink($"{engineer.Title}", "Details", new { id = engineer.EngineerId})</li>
+  <li>@Html.ActionLink($"{license.Title}", "Details", new { id = license.LicenseId})</li>
 }
 
 <p>@Html.ActionLink("Add new license", "Create")</p>
