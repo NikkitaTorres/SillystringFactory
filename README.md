@@ -46,7 +46,7 @@ The database="" apostrophes should be changed to whatever you named the sql file
 
 ## Know bugs
 
-Clicking on a machine from homepage list results in dead link.
+No known bugs at this time.
 
 ## License
 
