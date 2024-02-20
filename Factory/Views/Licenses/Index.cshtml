@@ -13,7 +13,7 @@
 
 @foreach (License license in Model)
 {
-  <li>@Html.ActionLink($"{license.Title}", "Details", new { id = license.LicenseId})</li>
+  <li>@Html.ActionLink($"{license.Title}", "Details", new { id = license.LicenseId })</li>
 }
 
 <p>@Html.ActionLink("Add new license", "Create")</p>
